@@ -54,14 +54,46 @@
 		CD828B11265BE9AE00DE534D /* Mowee */ = {
 			isa = PBXGroup;
 			children = (
-				CD828B12265BE9AE00DE534D /* AppDelegate.swift */,
-				CD828B14265BE9AE00DE534D /* SceneDelegate.swift */,
-				CD828B16265BE9AE00DE534D /* ViewController.swift */,
-				CD828B1B265BE9AF00DE534D /* Assets.xcassets */,
-				CD828B1D265BE9AF00DE534D /* LaunchScreen.storyboard */,
+				CD828B34265BEBA200DE534D /* main */,
+				CD828B2C265BEAC000DE534D /* assets */,
+				CD828B2B265BEAB200DE534D /* app */,
 				CD828B20265BE9AF00DE534D /* Info.plist */,
 			);
 			path = Mowee;
+			sourceTree = "<group>";
+		};
+		CD828B2B265BEAB200DE534D /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B16265BE9AE00DE534D /* ViewController.swift */,
+				CD828B30265BEB0200DE534D /* Network */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CD828B2C265BEAC000DE534D /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B1B265BE9AF00DE534D /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CD828B30265BEB0200DE534D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CD828B34265BEBA200DE534D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B12265BE9AE00DE534D /* AppDelegate.swift */,
+				CD828B14265BE9AE00DE534D /* SceneDelegate.swift */,
+				CD828B1D265BE9AF00DE534D /* LaunchScreen.storyboard */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
