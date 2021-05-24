@@ -17,6 +17,7 @@
 		CD828B40265BEC9900DE534D /* CustomHttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B3F265BEC9900DE534D /* CustomHttpError.swift */; };
 		CD828B43265BECB800DE534D /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B42265BECB800DE534D /* RequestType.swift */; };
 		CD828B46265BECD300DE534D /* UnknowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B45265BECD300DE534D /* UnknowError.swift */; };
+		CD828B49265BED7E00DE534D /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B48265BED7E00DE534D /* NetworkConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CD828B3F265BEC9900DE534D /* CustomHttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHttpError.swift; sourceTree = "<group>"; };
 		CD828B42265BECB800DE534D /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		CD828B45265BECD300DE534D /* UnknowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknowError.swift; sourceTree = "<group>"; };
+		CD828B48265BED7E00DE534D /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CD828B35265BEC0C00DE534D /* NetworkManager.swift */,
+				CD828B48265BED7E00DE534D /* NetworkConstants.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD828B49265BED7E00DE534D /* NetworkConstants.swift in Sources */,
 				CD828B46265BECD300DE534D /* UnknowError.swift in Sources */,
 				CD828B36265BEC0C00DE534D /* NetworkManager.swift in Sources */,
 				CD828B17265BE9AE00DE534D /* ViewController.swift in Sources */,
