@@ -12,6 +12,11 @@
 		CD828B17265BE9AE00DE534D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B16265BE9AE00DE534D /* ViewController.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
 		CD828B1F265BE9AF00DE534D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1D265BE9AF00DE534D /* LaunchScreen.storyboard */; };
+		CD828B36265BEC0C00DE534D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B35265BEC0C00DE534D /* NetworkManager.swift */; };
+		CD828B3D265BEC6700DE534D /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B3C265BEC6700DE534D /* Decoder.swift */; };
+		CD828B40265BEC9900DE534D /* CustomHttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B3F265BEC9900DE534D /* CustomHttpError.swift */; };
+		CD828B43265BECB800DE534D /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B42265BECB800DE534D /* RequestType.swift */; };
+		CD828B46265BECD300DE534D /* UnknowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B45265BECD300DE534D /* UnknowError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CD828B1B265BE9AF00DE534D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD828B1E265BE9AF00DE534D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD828B20265BE9AF00DE534D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD828B35265BEC0C00DE534D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CD828B3C265BEC6700DE534D /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		CD828B3F265BEC9900DE534D /* CustomHttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHttpError.swift; sourceTree = "<group>"; };
+		CD828B42265BECB800DE534D /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		CD828B45265BECD300DE534D /* UnknowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknowError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 		CD828B2B265BEAB200DE534D /* app */ = {
 			isa = PBXGroup;
 			children = (
+				CD828B39265BEC3D00DE534D /* Custom */,
 				CD828B16265BE9AE00DE534D /* ViewController.swift */,
 				CD828B30265BEB0200DE534D /* Network */,
 			);
@@ -82,6 +93,7 @@
 		CD828B30265BEB0200DE534D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CD828B35265BEC0C00DE534D /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -94,6 +106,33 @@
 				CD828B1D265BE9AF00DE534D /* LaunchScreen.storyboard */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		CD828B39265BEC3D00DE534D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B3B265BEC5200DE534D /* class */,
+				CD828B3A265BEC4400DE534D /* enum */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		CD828B3A265BEC4400DE534D /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B3F265BEC9900DE534D /* CustomHttpError.swift */,
+				CD828B42265BECB800DE534D /* RequestType.swift */,
+				CD828B45265BECD300DE534D /* UnknowError.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		CD828B3B265BEC5200DE534D /* class */ = {
+			isa = PBXGroup;
+			children = (
+				CD828B3C265BEC6700DE534D /* Decoder.swift */,
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD828B46265BECD300DE534D /* UnknowError.swift in Sources */,
+				CD828B36265BEC0C00DE534D /* NetworkManager.swift in Sources */,
 				CD828B17265BE9AE00DE534D /* ViewController.swift in Sources */,
+				CD828B43265BECB800DE534D /* RequestType.swift in Sources */,
 				CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */,
+				CD828B40265BEC9900DE534D /* CustomHttpError.swift in Sources */,
+				CD828B3D265BEC6700DE534D /* Decoder.swift in Sources */,
 				CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
