@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Responsible for caching fetching and caching images by their URL strings
 class ImageCacheManager {
     static let cache = NSCache<NSString, NSData>()
 

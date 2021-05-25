@@ -19,8 +19,10 @@ class MoviePersisterManager {
     
     private static var fileURL: URL? {
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil {
+            //Append path during app usage
             return documentsFolder?.appendingPathComponent("favouriteMovie.data")
         }else {
+            //Append path during when running Testcases
             return documentsFolder?.appendingPathComponent("test.data")
         }
     }
