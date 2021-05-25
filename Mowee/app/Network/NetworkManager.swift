@@ -8,10 +8,13 @@
 import Foundation
 
 class NetworkManager {
+    
+    static let shared = NetworkManager()
+    
     private let config = URLSessionConfiguration.default
     private var session: URLSession?
 
-    init() {
+    private init() {
         session = URLSession.init(configuration: config)
         config.timeoutIntervalForRequest = 60
     }
