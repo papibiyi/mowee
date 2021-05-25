@@ -12,10 +12,19 @@ class HomeViewController: UIViewController {
     let contentView = HomeView()
     let viewModel = HomeViewModel()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomView()
-        
+        setupTapAction()
+        fetchData()
+    }
+    
+    private func fetchData() {
         viewModel.getNowPlaying { (result) in
             switch result {
             case .success(let movies):
@@ -39,6 +48,20 @@ class HomeViewController: UIViewController {
                 break
             }
         }
+    }
+    
+    private func setupTapAction() {
+        contentView.nowPlayingView.onMovieCellTapped = {[weak self] data in
+            let controller = DetailViewController(with: data)
+            self?.navigationController?.pushViewController(controller, animated: true)
+
+        }
+        
+        contentView.popularMoviesView.onMovieCellTapped = {[weak self] data in
+            let controller = DetailViewController(with: data)
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }
+
     }
     
     

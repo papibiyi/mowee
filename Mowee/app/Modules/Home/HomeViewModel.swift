@@ -8,10 +8,10 @@
 import Foundation
 
 class HomeViewModel {
-    let homeWebService = HomeWebService()
+    let webService = HomeWebService()
     
     func getNowPlaying(completion: @escaping (Result<[Movie]?, Error>) -> Void) {
-        homeWebService.getNowPlaying { (result) in
+        webService.getNowPlaying { (result) in
             switch result {
             case .success(let response):
                 guard let movies = response.results else {
@@ -26,7 +26,7 @@ class HomeViewModel {
     }
     
     func getPopularMovies(completion: @escaping (Result<[Movie]?, Error>) -> Void) {
-        homeWebService.getPopularMovies { (result) in
+        webService.getPopularMovies { (result) in
             switch result {
             case .success(let response):
                 guard let movies = response.results else {
