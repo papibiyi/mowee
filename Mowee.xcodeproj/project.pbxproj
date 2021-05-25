@@ -15,6 +15,8 @@
 		CD2A26DB265D40F70071234C /* DetailsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26DA265D40F70071234C /* DetailsWebService.swift */; };
 		CD2A26DE265D41070071234C /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26DD265D41070071234C /* DetailsViewModel.swift */; };
 		CD2A26E1265D415B0071234C /* MovieDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E0265D415B0071234C /* MovieDetailsResponse.swift */; };
+		CD2A26E4265D4AC10071234C /* MoviePersisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */; };
+		CD2A26E7265D655D0071234C /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E6265D655D0071234C /* Favourite.swift */; };
 		CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B12265BE9AE00DE534D /* AppDelegate.swift */; };
 		CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B14265BE9AE00DE534D /* SceneDelegate.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		CD2A26DA265D40F70071234C /* DetailsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWebService.swift; sourceTree = "<group>"; };
 		CD2A26DD265D41070071234C /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		CD2A26E0265D415B0071234C /* MovieDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsResponse.swift; sourceTree = "<group>"; };
+		CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePersisterManager.swift; sourceTree = "<group>"; };
+		CD2A26E6265D655D0071234C /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		CD828B0F265BE9AE00DE534D /* Mowee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mowee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD828B12265BE9AE00DE534D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD828B14265BE9AE00DE534D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			children = (
 				CD828B3C265BEC6700DE534D /* Decoder.swift */,
 				CD2A26CD265D12010071234C /* ImageCacheManager.swift */,
+				CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				CD828B52265BEF3700DE534D /* Movie.swift */,
 				CD828B63265BFC0700DE534D /* NowPlayingResponse.swift */,
 				CD2A26E0265D415B0071234C /* MovieDetailsResponse.swift */,
+				CD2A26E6265D655D0071234C /* Favourite.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,11 +316,13 @@
 				CD828B46265BECD300DE534D /* UnknowError.swift in Sources */,
 				CD828B5A265BF11F00DE534D /* HomeView.swift in Sources */,
 				CD828B36265BEC0C00DE534D /* NetworkManager.swift in Sources */,
+				CD2A26E7265D655D0071234C /* Favourite.swift in Sources */,
 				CD2A26DB265D40F70071234C /* DetailsWebService.swift in Sources */,
 				CD2A26C7265D05690071234C /* MovieRowView.swift in Sources */,
 				CD2A26DE265D41070071234C /* DetailsViewModel.swift in Sources */,
 				CD828B43265BECB800DE534D /* RequestType.swift in Sources */,
 				CD828B4D265BEE8000DE534D /* HomeViewController.swift in Sources */,
+				CD2A26E4265D4AC10071234C /* MoviePersisterManager.swift in Sources */,
 				CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */,
 				CD828B57265BEFC600DE534D /* HomeWebService.swift in Sources */,
 				CD828B5D265BF31A00DE534D /* NowPlayingView.swift in Sources */,

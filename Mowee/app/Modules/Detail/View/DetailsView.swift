@@ -122,7 +122,7 @@ class DetailsView: UIView {
         return view
     }()
     
-    private let favouriteLabel: UILabel = {
+    let favouriteLabel: UILabel = {
         let label = UILabel()
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 8
