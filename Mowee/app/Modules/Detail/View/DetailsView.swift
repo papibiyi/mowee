@@ -135,6 +135,7 @@ class DetailsView: UIView {
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 8
         label.text = " Favourite "
+        label.backgroundColor = UIColor.darkGray
         label.font = UIFont.systemFont(ofSize: 14, weight: .black)
         label.isUserInteractionEnabled = true
         return label
