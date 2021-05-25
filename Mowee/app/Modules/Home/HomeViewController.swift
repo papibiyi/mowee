@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         setupCustomView()
         setupTapAction()
         fetchData()
+        setupScrollViewRefresh()
     }
     
     private func fetchData() {
@@ -31,6 +32,7 @@ class HomeViewController: UIViewController {
                 guard let movies = movies else { return }
                 DispatchQueue.main.async {
                     self.contentView.nowPlayingView.inject(data: movies)
+                    self.contentView.scrollView.refreshControl?.endRefreshing()
                 }
             default:
                 break
@@ -43,10 +45,17 @@ class HomeViewController: UIViewController {
                 guard let movies = movies else { return }
                 DispatchQueue.main.async {
                     self.contentView.popularMoviesView.inject(data: movies)
+                    self.contentView.scrollView.refreshControl?.endRefreshing()
                 }
             default:
                 break
             }
+        }
+    }
+    
+    private func setupScrollViewRefresh() {
+        contentView.onScrollViewRefreshed = {
+            self.fetchData()
         }
     }
     
