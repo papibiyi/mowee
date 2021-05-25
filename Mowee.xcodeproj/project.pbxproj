@@ -21,6 +21,9 @@
 		CD2A26F1265D68AE0071234C /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */; };
 		CD2A26F4265D70C80071234C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26F3265D70C80071234C /* FavouriteView.swift */; };
 		CD544C06265D8952006CE5F5 /* MoweeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD544C05265D8952006CE5F5 /* MoweeTests.swift */; };
+		CD544C0F265D89C4006CE5F5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B52265BEF3700DE534D /* Movie.swift */; };
+		CD544C12265D89D2006CE5F5 /* MoviePersisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */; };
+		CD544C15265D8A5B006CE5F5 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E6265D655D0071234C /* Favourite.swift */; };
 		CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B12265BE9AE00DE534D /* AppDelegate.swift */; };
 		CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B14265BE9AE00DE534D /* SceneDelegate.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
@@ -398,7 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD544C0F265D89C4006CE5F5 /* Movie.swift in Sources */,
+				CD544C12265D89D2006CE5F5 /* MoviePersisterManager.swift in Sources */,
 				CD544C06265D8952006CE5F5 /* MoweeTests.swift in Sources */,
+				CD544C15265D8A5B006CE5F5 /* Favourite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
