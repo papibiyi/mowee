@@ -54,7 +54,7 @@ class MovieRowCollectionViewCell: UICollectionViewCell {
     
     func configure(with data: Movie) {
         self.title.text = data.title
-        self.yearLabel.text = String(data.releaseDate.prefix(4))
+        self.yearLabel.text = String(data.releaseDate?.prefix(4) ?? "")
         self.title.alpha = 0
         self.yearLabel.alpha = 0
         cellImageView.heightAnchor.constraint(equalToConstant: self.frame.height - 20 - title.intrinsicContentSize.height - yearLabel.intrinsicContentSize.height).isActive = true

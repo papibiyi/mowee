@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.movie = data
         contentView.configureView(with: data)
-        getMovieDetails(by: data.id)
+        getMovieDetails(by: data.id ?? 0)
     }
     
     required init?(coder: NSCoder) {

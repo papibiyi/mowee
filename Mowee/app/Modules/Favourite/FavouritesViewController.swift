@@ -50,7 +50,7 @@ class FavouritesViewController: UIViewController {
 
 extension FavouritesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredMovies = favouriteMovies.filter{$0.title.lowercased().contains(searchBar.text?.lowercased() ?? "")}
+        filteredMovies = favouriteMovies.filter{($0.title?.lowercased() ?? "").contains(searchBar.text?.lowercased() ?? "")}
         contentView.tableView.reloadData()
     }
 }

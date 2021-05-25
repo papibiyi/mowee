@@ -20,10 +20,10 @@ class DetailsView: UIView {
     
     
     func configureView(with data: Movie) {
-        yearLabel.text = "(\(String(data.releaseDate.prefix(4))))"
+        yearLabel.text = "(\(String(data.releaseDate?.prefix(4) ?? "")))"
         titleLabel.text = data.originalTitle
         summaryLabel.text = data.overview
-        ratingLabel.text = String(data.voteAverage)
+        ratingLabel.text = String(data.voteAverage ?? 0.0)
         genreLabel.text = data.genres?.compactMap({ (data) -> String? in
             return data.name
         }).joined(separator: ", ")
