@@ -24,6 +24,9 @@ class DetailsView: UIView {
         titleLabel.text = data.originalTitle
         summaryLabel.text = data.overview
         ratingLabel.text = String(data.voteAverage)
+        genreLabel.text = data.genres?.compactMap({ (data) -> String? in
+            return data.name
+        }).joined(separator: ", ")
         
         ImageCacheManager.fetchImageData(from: "https://image.tmdb.org/t/p/original\(data.backdropPath)") { (data) -> (Void) in
             DispatchQueue.main.async {
@@ -66,6 +69,15 @@ class DetailsView: UIView {
         label.numberOfLines = 0
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private var genreLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 1
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -138,6 +150,7 @@ class DetailsView: UIView {
         stackView.addArrangedSubview(cellImageView)
         stackView.addArrangedSubview(hStackView1)
         stackView.addArrangedSubview(hStackView2)
+        stackView.addArrangedSubview(genreLabel)
         stackView.addArrangedSubview(summaryLabel)
         return stackView
     }()
@@ -170,7 +183,6 @@ class DetailsView: UIView {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.refreshControl = UIRefreshControl()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
     }()

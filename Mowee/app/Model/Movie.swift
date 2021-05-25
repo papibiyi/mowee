@@ -19,6 +19,7 @@ struct Movie: Codable, Equatable {
     let video: Bool
     let voteAverage: Double
     let voteCount: Int
+    let genres: [Genre]?
 
     enum CodingKeys: String, CodingKey {
         case adult
@@ -33,5 +34,11 @@ struct Movie: Codable, Equatable {
         case title, video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+        case genres
     }
+}
+
+struct Genre: Codable, Equatable {
+    let id: Int?
+    let name: String?
 }
