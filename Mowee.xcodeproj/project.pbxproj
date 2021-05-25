@@ -20,6 +20,7 @@
 		CD2A26ED265D67B90071234C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26EC265D67B90071234C /* TabBarController.swift */; };
 		CD2A26F1265D68AE0071234C /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */; };
 		CD2A26F4265D70C80071234C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26F3265D70C80071234C /* FavouriteView.swift */; };
+		CD544C06265D8952006CE5F5 /* MoweeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD544C05265D8952006CE5F5 /* MoweeTests.swift */; };
 		CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B12265BE9AE00DE534D /* AppDelegate.swift */; };
 		CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B14265BE9AE00DE534D /* SceneDelegate.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
@@ -39,6 +40,16 @@
 		CD828B64265BFC0700DE534D /* NowPlayingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B63265BFC0700DE534D /* NowPlayingResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CD544C08265D8952006CE5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD828B07265BE9AE00DE534D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD828B0E265BE9AE00DE534D;
+			remoteInfo = Mowee;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CD2A26C6265D05690071234C /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
 		CD2A26CA265D067B0071234C /* MovieRowCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowCollectionViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,9 @@
 		CD2A26EC265D67B90071234C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		CD2A26F3265D70C80071234C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		CD544C03265D8952006CE5F5 /* MoweeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoweeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD544C05265D8952006CE5F5 /* MoweeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoweeTests.swift; sourceTree = "<group>"; };
+		CD544C07265D8952006CE5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD828B0F265BE9AE00DE534D /* Mowee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mowee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD828B12265BE9AE00DE534D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD828B14265BE9AE00DE534D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD544C00265D8952006CE5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD828B0C265BE9AE00DE534D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,10 +161,20 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		CD544C04265D8952006CE5F5 /* MoweeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD544C05265D8952006CE5F5 /* MoweeTests.swift */,
+				CD544C07265D8952006CE5F5 /* Info.plist */,
+			);
+			path = MoweeTests;
+			sourceTree = "<group>";
+		};
 		CD828B06265BE9AE00DE534D = {
 			isa = PBXGroup;
 			children = (
 				CD828B11265BE9AE00DE534D /* Mowee */,
+				CD544C04265D8952006CE5F5 /* MoweeTests */,
 				CD828B10265BE9AE00DE534D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				CD828B0F265BE9AE00DE534D /* Mowee.app */,
+				CD544C03265D8952006CE5F5 /* MoweeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +302,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD544C02265D8952006CE5F5 /* MoweeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD544C0C265D8952006CE5F5 /* Build configuration list for PBXNativeTarget "MoweeTests" */;
+			buildPhases = (
+				CD544BFF265D8952006CE5F5 /* Sources */,
+				CD544C00265D8952006CE5F5 /* Frameworks */,
+				CD544C01265D8952006CE5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD544C09265D8952006CE5F5 /* PBXTargetDependency */,
+			);
+			name = MoweeTests;
+			productName = MoweeTests;
+			productReference = CD544C03265D8952006CE5F5 /* MoweeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CD828B0E265BE9AE00DE534D /* Mowee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD828B23265BE9AF00DE534D /* Build configuration list for PBXNativeTarget "Mowee" */;
@@ -296,6 +346,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					CD544C02265D8952006CE5F5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CD828B0E265BE9AE00DE534D;
+					};
 					CD828B0E265BE9AE00DE534D = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -315,11 +369,19 @@
 			projectRoot = "";
 			targets = (
 				CD828B0E265BE9AE00DE534D /* Mowee */,
+				CD544C02265D8952006CE5F5 /* MoweeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CD544C01265D8952006CE5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD828B0D265BE9AE00DE534D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +394,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CD544BFF265D8952006CE5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD544C06265D8952006CE5F5 /* MoweeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD828B0B265BE9AE00DE534D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +439,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CD544C09265D8952006CE5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD828B0E265BE9AE00DE534D /* Mowee */;
+			targetProxy = CD544C08265D8952006CE5F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CD828B1D265BE9AF00DE534D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -381,6 +459,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CD544C0A265D8952006CE5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = MoweeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.MoweeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mowee.app/Mowee";
+			};
+			name = Debug;
+		};
+		CD544C0B265D8952006CE5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCG4MM64;
+				INFOPLIST_FILE = MoweeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mojisola.MoweeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mowee.app/Mowee";
+			};
+			name = Release;
+		};
 		CD828B21265BE9AF00DE534D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD544C0C265D8952006CE5F5 /* Build configuration list for PBXNativeTarget "MoweeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD544C0A265D8952006CE5F5 /* Debug */,
+				CD544C0B265D8952006CE5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CD828B0A265BE9AE00DE534D /* Build configuration list for PBXProject "Mowee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
