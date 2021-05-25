@@ -45,7 +45,6 @@ class DetailsView: UIView {
     private var yearLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +54,6 @@ class DetailsView: UIView {
     private var titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = .white
         label.textAlignment = .left
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
@@ -66,7 +64,6 @@ class DetailsView: UIView {
     private var summaryLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -76,7 +73,6 @@ class DetailsView: UIView {
     private var ratingLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -128,7 +124,6 @@ class DetailsView: UIView {
         label.layer.cornerRadius = 8
         label.text = " Favourite "
         label.font = UIFont.systemFont(ofSize: 14, weight: .black)
-        label.backgroundColor = .lightText
         label.isUserInteractionEnabled = true
         return label
     }()
@@ -181,6 +176,7 @@ class DetailsView: UIView {
     }()
     
     private func setupView() {
+        self.backgroundColor = UIColor(named: "background")
         self.translatesAutoresizingMaskIntoConstraints = false
         addSubview(scrollView)
         scrollView.addSubview(self.stackView)

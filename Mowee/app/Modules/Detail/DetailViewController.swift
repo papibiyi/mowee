@@ -52,7 +52,7 @@ class DetailViewController: UIViewController {
         }) {
             contentView.favouriteLabel.backgroundColor = UIColor.yellow
         }else {
-            contentView.favouriteLabel.backgroundColor = UIColor.lightText
+            contentView.favouriteLabel.backgroundColor = UIColor.darkGray
         }
     }
     

@@ -23,7 +23,6 @@ class MovieRowCollectionViewCell: UICollectionViewCell {
     private var title: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -33,7 +32,6 @@ class MovieRowCollectionViewCell: UICollectionViewCell {
     private var yearLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false

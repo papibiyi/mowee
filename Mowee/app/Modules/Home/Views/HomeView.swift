@@ -52,6 +52,7 @@ class HomeView: UIView {
 
     
     private func setupView() {
+        self.backgroundColor = UIColor(named: "background")
         self.translatesAutoresizingMaskIntoConstraints = false
         addSubview(scrollView)
         scrollView.addSubview(self.stackView)

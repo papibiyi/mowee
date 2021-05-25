@@ -17,6 +17,8 @@
 		CD2A26E1265D415B0071234C /* MovieDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E0265D415B0071234C /* MovieDetailsResponse.swift */; };
 		CD2A26E4265D4AC10071234C /* MoviePersisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */; };
 		CD2A26E7265D655D0071234C /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E6265D655D0071234C /* Favourite.swift */; };
+		CD2A26ED265D67B90071234C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26EC265D67B90071234C /* TabBarController.swift */; };
+		CD2A26F1265D68AE0071234C /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */; };
 		CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B12265BE9AE00DE534D /* AppDelegate.swift */; };
 		CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B14265BE9AE00DE534D /* SceneDelegate.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		CD2A26E0265D415B0071234C /* MovieDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsResponse.swift; sourceTree = "<group>"; };
 		CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePersisterManager.swift; sourceTree = "<group>"; };
 		CD2A26E6265D655D0071234C /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		CD2A26EC265D67B90071234C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		CD828B0F265BE9AE00DE534D /* Mowee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mowee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD828B12265BE9AE00DE534D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD828B14265BE9AE00DE534D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD2A26E9265D65E90071234C /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A26F0265D68AE0071234C /* FavouritesViewController.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		CD2A26EB265D67A70071234C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A26EC265D67B90071234C /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		CD828B06265BE9AE00DE534D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +167,7 @@
 		CD828B2B265BEAB200DE534D /* app */ = {
 			isa = PBXGroup;
 			children = (
+				CD2A26EB265D67A70071234C /* TabBar */,
 				CD828B51265BEF0800DE534D /* Model */,
 				CD828B4B265BEE5000DE534D /* Modules */,
 				CD828B39265BEC3D00DE534D /* Custom */,
@@ -214,6 +235,7 @@
 		CD828B4B265BEE5000DE534D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CD2A26E9265D65E90071234C /* Favourite */,
 				CD2A26D2265D31E60071234C /* Detail */,
 				CD2A26D1265D31D70071234C /* Home */,
 			);
@@ -312,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD828B49265BED7E00DE534D /* NetworkConstants.swift in Sources */,
+				CD2A26ED265D67B90071234C /* TabBarController.swift in Sources */,
 				CD2A26D8265D34F20071234C /* DetailsView.swift in Sources */,
 				CD828B46265BECD300DE534D /* UnknowError.swift in Sources */,
 				CD828B5A265BF11F00DE534D /* HomeView.swift in Sources */,
@@ -328,6 +351,7 @@
 				CD828B5D265BF31A00DE534D /* NowPlayingView.swift in Sources */,
 				CD2A26D5265D32050071234C /* DetailViewController.swift in Sources */,
 				CD828B64265BFC0700DE534D /* NowPlayingResponse.swift in Sources */,
+				CD2A26F1265D68AE0071234C /* FavouritesViewController.swift in Sources */,
 				CD828B40265BEC9900DE534D /* CustomHttpError.swift in Sources */,
 				CD828B3D265BEC6700DE534D /* Decoder.swift in Sources */,
 				CD2A26CE265D12010071234C /* ImageCacheManager.swift in Sources */,

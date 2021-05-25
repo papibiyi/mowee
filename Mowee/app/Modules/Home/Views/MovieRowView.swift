@@ -31,7 +31,6 @@ class MovieRowView: UIView {
         let label = UILabel()
         label.alpha = 0
         label.numberOfLines = 0
-        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 20, weight: .black)
         label.translatesAutoresizingMaskIntoConstraints = false
