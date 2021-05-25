@@ -38,6 +38,7 @@ class NetworkManager {
                     queryItems.append(URLQueryItem(name: key, value: "\(value)"))
                 }
                 urlComponent?.queryItems = queryItems
+                request.url = urlComponent?.url
             } else {
                 let requestBodyData = try? JSONSerialization.data(withJSONObject: params)
                 request.httpBody = requestBodyData
