@@ -37,7 +37,6 @@
 		CD828B53265BEF3700DE534D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B52265BEF3700DE534D /* Movie.swift */; };
 		CD828B57265BEFC600DE534D /* HomeWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B56265BEFC600DE534D /* HomeWebService.swift */; };
 		CD828B5A265BF11F00DE534D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B59265BF11F00DE534D /* HomeView.swift */; };
-		CD828B5D265BF31A00DE534D /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B5C265BF31A00DE534D /* NowPlayingView.swift */; };
 		CD828B61265BF61300DE534D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B60265BF61300DE534D /* HomeViewModel.swift */; };
 		CD828B64265BFC0700DE534D /* NowPlayingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B63265BFC0700DE534D /* NowPlayingResponse.swift */; };
 /* End PBXBuildFile section */
@@ -84,7 +83,6 @@
 		CD828B52265BEF3700DE534D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CD828B56265BEFC600DE534D /* HomeWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebService.swift; sourceTree = "<group>"; };
 		CD828B59265BF11F00DE534D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		CD828B5C265BF31A00DE534D /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
 		CD828B60265BF61300DE534D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CD828B63265BFC0700DE534D /* NowPlayingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -283,7 +281,6 @@
 			children = (
 				CD2A26C9265D065D0071234C /* Cells */,
 				CD828B59265BF11F00DE534D /* HomeView.swift */,
-				CD828B5C265BF31A00DE534D /* NowPlayingView.swift */,
 				CD2A26C6265D05690071234C /* MovieRowView.swift */,
 			);
 			path = Views;
@@ -424,7 +421,6 @@
 				CD2A26E4265D4AC10071234C /* MoviePersisterManager.swift in Sources */,
 				CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */,
 				CD828B57265BEFC600DE534D /* HomeWebService.swift in Sources */,
-				CD828B5D265BF31A00DE534D /* NowPlayingView.swift in Sources */,
 				CD2A26D5265D32050071234C /* DetailViewController.swift in Sources */,
 				CD828B64265BFC0700DE534D /* NowPlayingResponse.swift in Sources */,
 				CD2A26F1265D68AE0071234C /* FavouritesViewController.swift in Sources */,
