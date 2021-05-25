@@ -34,8 +34,10 @@ class HomeViewController: UIViewController {
                     self.contentView.nowPlayingView.inject(data: movies)
                     self.contentView.scrollView.refreshControl?.endRefreshing()
                 }
-            default:
-                break
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.showAlertWith(title: "Oops!", message: "\(error.localizedDescription)\n Pull view to refresh")
+                }
             }
         }
         
@@ -47,8 +49,10 @@ class HomeViewController: UIViewController {
                     self.contentView.popularMoviesView.inject(data: movies)
                     self.contentView.scrollView.refreshControl?.endRefreshing()
                 }
-            default:
-                break
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.showAlertWith(title: "Oops!", message: "\(error.localizedDescription)\n Pull view to refresh")
+                }
             }
         }
     }

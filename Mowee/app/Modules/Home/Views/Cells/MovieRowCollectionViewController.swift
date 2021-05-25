@@ -59,7 +59,7 @@ class MovieRowCollectionViewCell: UICollectionViewCell {
         self.yearLabel.alpha = 0
         cellImageView.heightAnchor.constraint(equalToConstant: self.frame.height - 20 - title.intrinsicContentSize.height - yearLabel.intrinsicContentSize.height).isActive = true
 
-        ImageCacheManager.fetchImageData(from: "\(NetworkConstants.posterPath.rawValue)\(data.posterPath)") { (data) -> (Void) in
+        ImageCacheManager.fetchImageData(from: "\(NetworkConstants.posterPath.rawValue)\(data.posterPath ?? "")") { (data) -> (Void) in
             DispatchQueue.main.async {
                 self.cellImageView.image = UIImage(data: data as Data)
                 self.title.alpha = 1

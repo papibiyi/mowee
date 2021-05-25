@@ -23,6 +23,7 @@
 		CD544C0F265D89C4006CE5F5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B52265BEF3700DE534D /* Movie.swift */; };
 		CD544C12265D89D2006CE5F5 /* MoviePersisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E3265D4AC10071234C /* MoviePersisterManager.swift */; };
 		CD544C15265D8A5B006CE5F5 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A26E6265D655D0071234C /* Favourite.swift */; };
+		CD544C1E265D9827006CE5F5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD544C1D265D9827006CE5F5 /* UIViewController+Extension.swift */; };
 		CD828B13265BE9AE00DE534D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B12265BE9AE00DE534D /* AppDelegate.swift */; };
 		CD828B15265BE9AE00DE534D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD828B14265BE9AE00DE534D /* SceneDelegate.swift */; };
 		CD828B1C265BE9AF00DE534D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD828B1B265BE9AF00DE534D /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		CD544C03265D8952006CE5F5 /* MoweeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoweeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD544C05265D8952006CE5F5 /* MoweeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoweeTests.swift; sourceTree = "<group>"; };
 		CD544C07265D8952006CE5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD544C1D265D9827006CE5F5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CD828B0F265BE9AE00DE534D /* Mowee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mowee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD828B12265BE9AE00DE534D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD828B14265BE9AE00DE534D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 			path = MoweeTests;
 			sourceTree = "<group>";
 		};
+		CD544C1C265D980A006CE5F5 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD544C1D265D9827006CE5F5 /* UIViewController+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		CD828B06265BE9AE00DE534D = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +250,7 @@
 		CD828B39265BEC3D00DE534D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				CD544C1C265D980A006CE5F5 /* extension */,
 				CD828B3B265BEC5200DE534D /* class */,
 				CD828B3A265BEC4400DE534D /* enum */,
 			);
@@ -406,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD544C1E265D9827006CE5F5 /* UIViewController+Extension.swift in Sources */,
 				CD828B49265BED7E00DE534D /* NetworkConstants.swift in Sources */,
 				CD2A26ED265D67B90071234C /* TabBarController.swift in Sources */,
 				CD2A26D8265D34F20071234C /* DetailsView.swift in Sources */,
