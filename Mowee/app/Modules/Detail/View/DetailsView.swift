@@ -28,7 +28,7 @@ class DetailsView: UIView {
             return data.name
         }).joined(separator: ", ")
         
-        ImageCacheManager.fetchImageData(from: "https://image.tmdb.org/t/p/original\(data.backdropPath)") { (data) -> (Void) in
+        ImageCacheManager.fetchImageData(from: "\(NetworkConstants.posterPath.rawValue)\(data.backdropPath)") { (data) -> (Void) in
             DispatchQueue.main.async {
                 self.cellImageView.image = UIImage(data: data as Data)
             }

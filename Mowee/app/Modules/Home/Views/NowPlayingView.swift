@@ -36,7 +36,7 @@ class NowPlayingView: UIView {
     
     func configure(with data: Movie) {
         DispatchQueue.global(qos: .background).async {
-            guard let url = URL(string: "https://image.tmdb.org/t/p/original\(data.backdropPath)") else {return}
+            guard let url = URL(string: "\(NetworkConstants.posterPath.rawValue)\(data.backdropPath)") else {return}
             guard let ddata = try? Data(contentsOf: url) else {return}
             DispatchQueue.main.async {
                 self.imageView.alpha = 0
